@@ -29,15 +29,16 @@ export default function SearchMovies() {
 
     return (
         <div>
-            <form onSubmit={handleSubmit} className="form">
+            <form onSubmit={searchMovies} className="form">
                 <label className="label" htmlFor="query">
                     Movie Name
                     </label>
                 <input
+                    className="input"
                     type="text"
                     name="query"
                     value={query}
-                    className="input"
+
                     onChange={(e) => setQuery(e.target.value)}
                     placeholder="i.e Jurassic Park"
                 />

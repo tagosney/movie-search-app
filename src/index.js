@@ -9,7 +9,7 @@ class Main extends React.Component {
     return (
       <div className="container">
         <h1 className="title">React Movie Search</h1>
-        <p><SearchMovies /></p>
+        <SearchMovies />
       </div>
     );
   }
